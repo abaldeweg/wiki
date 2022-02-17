@@ -26,5 +26,5 @@ The articles will be created in your working directory.
 
 ## Flags
 
---path - Specify the directory where the data should be stored.
---file - Specify the filename.
+- --path - Specify the directory where the data should be stored.
+- --file - Specify the filename.
