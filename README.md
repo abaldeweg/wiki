@@ -1,4 +1,4 @@
-# baldeweg/mission
+# baldeweg/wiki
 
 A CLI to create markdown files for a wiki.
 
