@@ -50,13 +50,17 @@ func GetFilename() string {
 }
 
 func GetUrl() string {
-    return path.Join(GetPath(), slug.Make(GetFilename()) + ".md")
+    slug := slug.Make(GetFilename())
+
+    return path.Join(GetPath(), slug, slug + ".md")
 }
 
 func Create() {
     if isFile() {
         return
     }
+
+    os.MkdirAll(path.Join(GetPath(), slug.Make(GetFilename())) , 0755)
 
     template, err := template.New("article").Parse(tpl)
     if err != nil {
