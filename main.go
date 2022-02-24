@@ -46,8 +46,8 @@ func main() {
         fmt.Println("https://github.com/abaldeweg/wiki")
         fmt.Println("")
         fmt.Println("Commands")
-        fmt.Println("mission [options] new - Adds a new wiki")
-        fmt.Println("mission help - Shows the help")
+        fmt.Println("wiki [options] new - Adds a new wiki")
+        fmt.Println("wiki help - Shows the help")
     default:
         create.Create()
     }
